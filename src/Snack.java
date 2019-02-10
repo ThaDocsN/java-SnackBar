@@ -16,6 +16,13 @@ public class Snack {
         getQuantity();
     }
 
+    public Snack(String name, int quantity, int cost, String vendingMachineId) {
+        this.name = name;
+        this.quantity = quantity;
+        this.cost = cost;
+        this.vendingMachineId = vendingMachineId;
+    }
+
     public int getCost() {
         return cost * quantity;
     }
